@@ -1,6 +1,5 @@
 import React from "react";
 import MessageSidePanel from "./SidePanel";
-import MessageBody from "./MessageBody"
 import "./Message.css";
 const Message = () => {
    const [isDrawerOpen, setIsDrawerOpen] = React.useState(true);
@@ -63,7 +62,7 @@ const Message = () => {
   {
    setSearch(false);
 
-      if(searchValue!="")
+      if(searchValue!=="")
       {
           let copymsg=[...messageList];
 
@@ -101,7 +100,6 @@ const Message = () => {
      
   }
 const [searchValue,setSearchValue]=React.useState("");
-const [toggleFlag,setToggleFlag]=React.useState(true);
 const [flagList,setFlagList]=React.useState([]);
 const [deletemsgList,setdeleteMsgList]=React.useState([]);
 const [isSearch,setSearch]=React.useState(true);

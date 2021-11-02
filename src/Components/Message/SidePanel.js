@@ -1,5 +1,4 @@
 import React from "react";
-import MessageBody from "./MessageBody"
 
 const MessageSidePanel = (props) => {
     console.log(props)
