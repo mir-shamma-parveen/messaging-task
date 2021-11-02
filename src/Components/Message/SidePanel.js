@@ -1,12 +1,11 @@
 import React from "react";
 
 const MessageSidePanel = (props) => {
-    console.log(props)
 
     return (
-        
+
         <div className="messageSidePanel">
-            
+
             <div className="sidebarHeader">
                 <button className="menuBtn" onClick={() => props.setIsDrawerOpen(!props.isDrawerOpen)}>
                     <span className="material-icons-outlined">
@@ -34,9 +33,9 @@ const MessageSidePanel = (props) => {
                         </i>
 
                         <strong>Flagged</strong>
-                        {props.flagList.length>0
-                        &&
-                        <span className="Counter">{props.flagList.length}</span>
+                        {props.flagList.length > 0
+                            &&
+                            <span className="Counter">{props.flagList.length}</span>
                         }
                     </button>
                 </div>
@@ -58,12 +57,12 @@ const MessageSidePanel = (props) => {
                         </i>
 
                         <strong>Deleted</strong>
-                        {props.deletemsgList.length>0
-                        &&
-                        <span className="Counter">{props.deletemsgList.length}</span>
+                        {props.deletemsgList.length > 0
+                            &&
+                            <span className="Counter">{props.deletemsgList.length}</span>
                         }
 
-                        
+
                     </button>
                 </div>
             </div>
